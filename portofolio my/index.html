@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Labib Abdul Fattah</title>
+  
+  <!-- Favicon / Tab Icon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@600;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=20261125_07">
+</head>
+<body>
+
+  <!-- ======================================================== -->
+  <!-- 1. TAMPILAN AWAL / INTRO LANDING SCREEN                 -->
+  <!-- Sesuai dengan desain mockup Labib Abdul Fattah          -->
+  <!-- ======================================================== -->
+  <section id="landing-screen" class="landing-screen">
+    <div class="landing-background" id="landing-background"></div>
+
+    <!-- LOGO DI POJOK KIRI ATAS (Sesuai Permintaan Lingkaran Merah) -->
+    <div class="landing-top-logo" title="Logo Labib Abdul Fattah">
+      <div class="top-logo-badge">
+        <img src="assets/logo.jpg" alt="Logo Labib" class="top-logo-img">
+        <div class="top-logo-ambient-ring"></div>
+      </div>
+    </div>
+
+    <!-- TOP RIGHT: LIVE CLOCK WAKTU DAERAH & MODE TOGGLE SIANG / MALAM -->
+    <div class="landing-top-right-group">
+      <!-- Live Clock Waktu Daerah & Negara -->
+      <div class="live-clock-badge" id="landing-live-clock" title="Waktu Nyata Daerah & Negara Anda">
+        <span class="clock-live-dot"></span>
+        <i class="fa-regular fa-clock clock-icon"></i>
+        <span class="clock-time">11:40:40</span>
+        <span class="clock-zone">WIB • ID</span>
+      </div>
+
+      <!-- Tombol Pengaturan di Layar Awal -->
+      <button type="button" id="btn-open-settings-landing" class="hud-btn-pill hud-btn-settings" title="Pengaturan Portofolio">
+        <i class="fa-solid fa-gear"></i> <span>Pengaturan</span>
+      </button>
+    </div>
+
+    <div class="landing-content-container">
+      
+      <!-- HERO CARTER OGUNSOLA VINTAGE STAMP POSTCARD (Menggantikan Desain Lama Sesuai Permintaan) -->
+      <div class="landing-postcard-wrapper">
+        <div class="carter-postcard hero-landing-card">
+          
+          <!-- Postmark Faded Circle Top Right -->
+          <div class="postmark-circle-top-right">
+            <svg viewBox="0 0 120 120" class="svg-postmark">
+              <circle cx="60" cy="60" r="50" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+              <circle cx="60" cy="60" r="42" fill="none" stroke="currentColor" stroke-width="1"/>
+              <path id="curve-top-landing" d="M 22,60 A 38,38 0 0,1 98,60" fill="none"/>
+              <path id="curve-bot-landing" d="M 22,60 A 38,38 0 0,0 98,60" fill="none"/>
+              <text font-family="'DM Mono', monospace" font-size="8.5" fill="currentColor" letter-spacing="2">
+                <textPath href="#curve-top-landing" startOffset="50%" text-anchor="middle">INDONESIA</textPath>
+                <textPath href="#curve-bot-landing" startOffset="50%" text-anchor="middle">2026 • LABIB</textPath>
+              </text>
+              <line x1="30" y1="52" x2="90" y2="52" stroke="currentColor" stroke-width="1"/>
+              <line x1="30" y1="68" x2="90" y2="68" stroke="currentColor" stroke-width="1"/>
+              <text x="60" y="63" font-family="'DM Mono', monospace" font-size="7.5" fill="currentColor" text-anchor="middle" font-weight="bold">20 NOV</text>
+            </svg>
+          </div>
+
+          <!-- Postage Stamp (Left Side) -->
+          <div class="postcard-stamp-outer">
+            <div class="postcard-stamp">
+              <div class="stamp-photo-frame">
+                <img src="assets/profile.jpg" alt="Labib Abdul Fattah" class="stamp-photo-img">
+              </div>
+              <div class="stamp-caption">
+                <span class="stamp-name">LABIB ABDUL FATTAH</span>
+                <svg class="stamp-waves" viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <path d="M0,4 Q7,-1 14,4 T28,4"/>
+                  <path d="M0,7 Q7,2 14,7 T28,7"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Rubber Cancellation Stamp Overlapping Edge -->
+            <div class="stamp-ink-overlap">
+              <svg viewBox="0 0 170 110" class="svg-ink-overlap">
+                <circle cx="45" cy="55" r="42" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="45" cy="55" r="35" fill="none" stroke="currentColor" stroke-width="0.8"/>
+                <line x1="15" y1="48" x2="75" y2="48" stroke="currentColor" stroke-width="1"/>
+                <line x1="15" y1="62" x2="75" y2="62" stroke="currentColor" stroke-width="1"/>
+                <text x="45" y="34" font-family="'DM Mono', monospace" font-size="7" fill="currentColor" text-anchor="middle" letter-spacing="1">INDONESIA</text>
+                <text x="45" y="57" font-family="'DM Mono', monospace" font-size="8" fill="currentColor" text-anchor="middle" font-weight="bold">DEV</text>
+                <text x="45" y="80" font-family="'DM Mono', monospace" font-size="6.5" fill="currentColor" text-anchor="middle">2026</text>
+                <!-- Wavy horizontal lines -->
+                <path d="M 88,38 Q 105,30 122,38 T 160,38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M 88,49 Q 105,41 122,49 T 160,49" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M 88,60 Q 105,52 122,60 T 160,60" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M 88,71 Q 105,63 122,71 T 160,71" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Postcard Content (Right Side) -->
+          <div class="postcard-content">
+            
+            <!-- Top Action Badges (Briefcase, Trophy) -->
+            <div class="postcard-top-actions">
+              <a href="#proyek" class="postcard-action-btn" title="Portofolio Proyek">
+                <i class="fa-solid fa-briefcase"></i>
+              </a>
+              <a href="#keahlian" class="postcard-action-btn" title="Keahlian & Stack">
+                <i class="fa-solid fa-trophy"></i>
+              </a>
+            </div>
+
+            <!-- Mid-section Quote / Bio -->
+            <div class="postcard-mid-body">
+              <span class="tagline-badge">DEVELOPER & CREATIVE</span>
+              <h2 class="postcard-bio-heading">Labib Abdul Fattah</h2>
+              <p class="postcard-bio-desc">Membangun website modern, eksplorasi 3D motion interaktif, serta antarmuka digital yang presisi dan estetis.</p>
+            </div>
+
+            <!-- Social Media Icons Row: X, Instagram, WhatsApp, GitHub, LinkedIn -->
+            <div class="postcard-socials">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link x" title="X (Twitter)">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link ig" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link gh" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="social-stamp-link wa" title="WhatsApp Chat">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link li" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+
+            <!-- Bottom Meta Strip with Next Button & Location -->
+            <div class="postcard-bottom-strip">
+              <div class="strip-left">
+                <a href="#beranda" id="btn-next-beranda" class="postcard-pill-btn next-action-btn" title="Klik untuk lanjut ke Beranda">
+                  Next <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="strip-location">
+                <span>INDONESIA ➔ GLOBAL • <span class="postcard-clock">11:40 WIB</span></span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tanda Tangan / Watermark Developer di Pojok Bawah -->
+      <div class="developer-watermark">
+        <span class="dev-line1">developer</span>
+        <span class="dev-line2">by Labib</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 2. HALAMAN BERANDA / 3D CYLINDER ROTATING MENU STAGE     -->
+  <!-- Terinspirasi dari carterogunsola.com/lab                  -->
+  <!-- ======================================================== -->
+  <main id="beranda" class="beranda-screen beranda-lab-dark">
+    
+    <!-- BACKGROUND BERANDA DENGAN ILUSTRASI WELCOME & SPLASH WARNA -->
+    <div class="beranda-background"></div>
+
+    <!-- TOP STATUS HUD BAR -->
+    <header class="lab-hud-header">
+      <div class="hud-main-bar">
+        <div class="hud-left-brand">
+          <div class="hud-logo-wrap">
+            <img src="assets/logo.jpg" alt="Logo Labib" class="hud-logo-img">
+          </div>
+          <span class="hud-brand-title">Labib<span class="brand-dot">.</span>dev</span>
+          <span class="hud-badge-motion">© Motion</span>
+        </div>
+
+        <div class="hud-right-actions">
+          <!-- MINI MUSIC PLAYER DOCK DI HEADER (Menggantikan tombol Music: Phonk lama) -->
+          <div id="turntable-mini-dock" class="turntable-mini-dock hud-music-dock" title="Buka / Tutup Pemutar Kaset Vinyl">
+            <div class="mini-dock-left" id="mini-dock-trigger">
+              <div class="mini-vinyl-icon" id="mini-vinyl-icon">
+                <i class="fa-solid fa-record-vinyl"></i>
+              </div>
+              <div class="mini-dock-info">
+                <span class="mini-title" id="mini-song-title">Heavenly Jumpstyle</span>
+                <span class="mini-status" id="mini-song-status">Buka Deck ⌃</span>
+              </div>
+            </div>
+            <button id="btn-mini-play" class="btn-mini-play" title="Putar / Jeda Lagu">
+              <i class="fa-solid fa-play" id="mini-play-icon"></i>
+            </button>
+          </div>
+
+          <!-- LIVE CLOCK WAKTU DAERAH & NEGARA -->
+          <div class="live-clock-badge hud-clock-badge" id="hud-live-clock" title="Waktu Nyata Daerah & Negara Anda">
+            <span class="clock-live-dot"></span>
+            <span class="clock-time">11:40:40</span>
+            <span class="clock-zone">WIB • ID</span>
+          </div>
+
+          <button id="btn-hud-about" class="hud-btn-pill hud-btn-about" title="Profil Labib Abdul Fattah">
+            <i class="fa-regular fa-id-badge"></i> <span>About</span>
+          </button>
+
+          <!-- Tombol Pengaturan (Settings Modal) -->
+          <button type="button" id="btn-open-settings" class="hud-btn-pill hud-btn-settings" title="Pengaturan Portofolio">
+            <i class="fa-solid fa-gear"></i> <span>Pengaturan</span>
+          </button>
+
+          <button id="btn-back-to-intro" class="hud-btn-pill hud-btn-intro" title="Kembali ke Layar Pembuka">
+            <i class="fa-solid fa-arrow-left"></i> <span>Layar Awal</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 3D ROTATING CYLINDER / WHEEL MENU STAGE -->
+    <div class="lab-cylinder-viewport" id="lab-cylinder-viewport">
+      
+      <!-- Garis Horizon & Ambient Lighting -->
+      <div class="cylinder-ambient-glow"></div>
+      <div class="cylinder-focus-line"></div>
+
+      <!-- Kontainer Silinder 3D Miring (Slanted 3D Carousel) -->
+      <div class="lab-cylinder-stage" id="lab-cylinder-stage">
+        <div class="lab-items-track" id="lab-items-track">
+
+          <!-- Item 0: Tentang Saya -->
+          <div class="lab-cylinder-item" data-index="0" data-section="tentang">
+            <div class="item-inner">
+              <span class="item-name">Tentang Saya</span>
+              <div class="item-badges">
+                <span class="badge-tag">BIO</span>
+                <span class="badge-tag accent">PROFILE ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 1: Keahlian & Stack -->
+          <div class="lab-cylinder-item" data-index="1" data-section="keahlian">
+            <div class="item-inner">
+              <span class="item-name">Keahlian & Stack</span>
+              <div class="item-badges">
+                <span class="badge-tag">TECH</span>
+                <span class="badge-tag accent">SKILLS ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Portofolio Proyek -->
+          <div class="lab-cylinder-item" data-index="2" data-section="proyek">
+            <div class="item-inner">
+              <span class="item-name">Portofolio Proyek</span>
+              <div class="item-badges">
+                <span class="badge-tag">3D</span>
+                <span class="badge-tag new">NEW ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Creative Motion Lab -->
+          <div class="lab-cylinder-item" data-index="3" data-section="motion-lab">
+            <div class="item-inner">
+              <span class="item-name">Creative Motion</span>
+              <div class="item-badges">
+                <span class="badge-tag">LAB</span>
+                <span class="badge-tag accent">MOTION ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Kontak Saya -->
+          <div class="lab-cylinder-item" data-index="4" data-section="kontak">
+            <div class="item-inner">
+              <span class="item-name">Hubungi Saya</span>
+              <div class="item-badges">
+                <span class="badge-tag">CONNECT</span>
+                <span class="badge-tag new">COLLAB ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Layar Awal -->
+          <div class="lab-cylinder-item" data-index="5" data-section="intro">
+            <div class="item-inner">
+              <span class="item-name">Layar Pembuka</span>
+              <div class="item-badges">
+                <span class="badge-tag">RESET</span>
+                <span class="badge-tag">INTRO ↗</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM CONTROLS & STATUS FOOTER -->
+    <footer class="lab-hud-footer">
+      <div class="hud-channel-counter">
+        <span class="counter-label">INDEX ::</span> 
+        <strong id="hud-active-num" class="active-num">01</strong> / 06 
+        <button id="btn-open-active-detail" class="btn-open-detail" title="Buka Detail Bagian Ini">
+          Buka Detail <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </footer>
+
+
+    <!-- ======================================================== -->
+    <!-- SLIDE-OVER DETAIL DRAWER UNTUK KONTEN LENGKAP            -->
+    <!-- (Terbuka saat item diklik atau tombol Buka Detail)      -->
+    <!-- ======================================================== -->
+    <div id="lab-detail-drawer" class="lab-detail-drawer" aria-hidden="true">
+      <div class="drawer-overlay" id="drawer-overlay"></div>
+      
+      <div class="drawer-content-box">
+        <!-- Header Drawer -->
+        <div class="drawer-header">
+          <div class="drawer-header-left">
+            <span class="drawer-tag" id="drawer-section-tag">SECTION DETAIL</span>
+            <h2 class="drawer-title" id="drawer-section-title">Detail Konten</h2>
+          </div>
+          <button id="drawer-close-btn" class="drawer-close-btn" title="Tutup Panel (Esc)">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Scrollable Content Body -->
+        <div class="drawer-scroll-body" id="drawer-scroll-body">
+          
+          <!-- KONTEN: TENTANG SAYA -->
+          <div id="content-tentang" class="drawer-section-view">
+            
+            <!-- CARTER OGUNSOLA STYLE VINTAGE STAMP POSTCARD -->
+            <div class="carter-postcard-wrapper">
+              <div class="carter-postcard hero-landing-card">
+                
+                <!-- Faded Circular Postmark Watermark Top Right -->
+                <div class="postmark-circle-top-right">
+                  <svg viewBox="0 0 120 120" class="svg-postmark">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+                    <circle cx="60" cy="60" r="42" fill="none" stroke="currentColor" stroke-width="1"/>
+                    <path id="curve-top-idx" d="M 22,60 A 38,38 0 0,1 98,60" fill="none"/>
+                    <path id="curve-bot-idx" d="M 22,60 A 38,38 0 0,0 98,60" fill="none"/>
+                    <text font-family="'DM Mono', monospace" font-size="8.5" fill="currentColor" letter-spacing="2">
+                      <textPath href="#curve-top-idx" startOffset="50%" text-anchor="middle">INDONESIA</textPath>
+                      <textPath href="#curve-bot-idx" startOffset="50%" text-anchor="middle">2026 • LABIB</textPath>
+                    </text>
+                    <line x1="30" y1="52" x2="90" y2="52" stroke="currentColor" stroke-width="1"/>
+                    <line x1="30" y1="68" x2="90" y2="68" stroke="currentColor" stroke-width="1"/>
+                    <text x="60" y="63" font-family="'DM Mono', monospace" font-size="7.5" fill="currentColor" text-anchor="middle" font-weight="bold">20 NOV</text>
+                  </svg>
+                </div>
+
+                <!-- Postage Stamp (Left Side) -->
+                <div class="postcard-stamp-outer">
+                  <div class="postcard-stamp">
+                    <div class="stamp-photo-frame">
+                      <img src="assets/profile.jpg" alt="Labib Abdul Fattah" class="stamp-photo-img">
+                    </div>
+                    <div class="stamp-caption">
+                      <span class="stamp-name">LABIB ABDUL FATTAH</span>
+                      <svg class="stamp-waves" viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M0,4 Q7,-1 14,4 T28,4"/>
+                        <path d="M0,7 Q7,2 14,7 T28,7"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Rubber Cancellation Stamp Overlapping Edge -->
+                  <div class="stamp-ink-overlap">
+                    <svg viewBox="0 0 170 110" class="svg-ink-overlap">
+                      <circle cx="45" cy="55" r="42" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <circle cx="45" cy="55" r="35" fill="none" stroke="currentColor" stroke-width="0.8"/>
+                      <line x1="15" y1="48" x2="75" y2="48" stroke="currentColor" stroke-width="1"/>
+                      <line x1="15" y1="62" x2="75" y2="62" stroke="currentColor" stroke-width="1"/>
+                      <text x="45" y="34" font-family="'DM Mono', monospace" font-size="7" fill="currentColor" text-anchor="middle" letter-spacing="1">INDONESIA</text>
+                      <text x="45" y="57" font-family="'DM Mono', monospace" font-size="8" fill="currentColor" text-anchor="middle" font-weight="bold">DEV</text>
+                      <text x="45" y="80" font-family="'DM Mono', monospace" font-size="6.5" fill="currentColor" text-anchor="middle">2026</text>
+                      <!-- Wavy horizontal lines -->
+                      <path d="M 88,38 Q 105,30 122,38 T 160,38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M 88,49 Q 105,41 122,49 T 160,49" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M 88,60 Q 105,52 122,60 T 160,60" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M 88,71 Q 105,63 122,71 T 160,71" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Postcard Content (Right Side) -->
+                <div class="postcard-content">
+                  
+                  <!-- Top Action Badges (Briefcase, Trophy) -->
+                  <div class="postcard-top-actions">
+                    <button type="button" class="postcard-action-btn" onclick="openSectionDrawer('proyek')" title="Portofolio Proyek">
+                      <i class="fa-solid fa-briefcase"></i>
+                    </button>
+                    <button type="button" class="postcard-action-btn" onclick="openSectionDrawer('keahlian')" title="Keahlian & Stack">
+                      <i class="fa-solid fa-trophy"></i>
+                    </button>
+                  </div>
+
+                  <!-- Mid-section Quote / Bio -->
+                  <div class="postcard-mid-body">
+                    <span class="tagline-badge">DEVELOPER & CREATIVE</span>
+                    <h3 class="postcard-bio-heading">Labib Abdul Fattah</h3>
+                    <p class="postcard-bio-desc">Membangun website modern, eksplorasi 3D motion interaktif, serta antarmuka digital yang presisi dan estetis.</p>
+                  </div>
+
+                  <!-- Social Media Icons Row: IG, WA, GitHub, LinkedIn, X -->
+                  <div class="postcard-socials">
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link x" title="X (Twitter)">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link ig" title="Instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link gh" title="GitHub">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="social-stamp-link wa" title="WhatsApp Chat">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-stamp-link li" title="LinkedIn">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+
+                  <!-- Bottom Meta Strip -->
+                  <div class="postcard-bottom-strip">
+                    <div class="strip-left">
+                      <button type="button" class="postcard-pill-btn" onclick="document.getElementById('bio-details-grid').scrollIntoView({behavior:'smooth'})" title="Lihat Detail Bio">
+                        About me
+                      </button>
+                      <div class="strip-badge-role">
+                        <i class="fa-solid fa-paper-plane plane-icon"></i>
+                        <span class="role-text">lucid wren</span>
+                      </div>
+                    </div>
+                    <div class="strip-location">
+                      <span>INDONESIA ➔ GLOBAL</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="drawer-cards-grid" id="bio-details-grid">
+              <div class="drawer-card">
+                <h4><i class="fa-solid fa-code"></i> Fokus Utama</h4>
+                <p>Membangun website modern yang bersih, responsif, memiliki estetika visual tinggi, serta ramah pengguna.</p>
+              </div>
+              <div class="drawer-card">
+                <h4><i class="fa-solid fa-compass-drafting"></i> Minat & Eksplorasi</h4>
+                <p>Motion UI, micro-interactions, 3D web experiences, dan arsitektur frontend terkini.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KONTEN: KEAHLIAN & STACK -->
+          <div id="content-keahlian" class="drawer-section-view hidden">
+            <div class="section-intro-text">
+              <h3>Kemampuan & Alat Pengembangan</h3>
+              <p>Teknologi dan peralatan yang saya gunakan dalam merancang antarmuka serta mengembangkan solusi digital:</p>
+            </div>
+
+            <div class="skills-grid-drawer">
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon html-color"><i class="fa-brands fa-html5"></i></div>
+                <div>
+                  <strong>HTML5</strong>
+                  <span>Struktur Semantik & SEO</span>
+                </div>
+              </div>
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon css-color"><i class="fa-brands fa-css3-alt"></i></div>
+                <div>
+                  <strong>CSS3 & Layout</strong>
+                  <span>Flexbox, Grid, Animasi 3D</span>
+                </div>
+              </div>
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon js-color"><i class="fa-brands fa-js"></i></div>
+                <div>
+                  <strong>JavaScript</strong>
+                  <span>DOM, Interaktivitas, Web Audio</span>
+                </div>
+              </div>
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon php-color"><i class="fa-brands fa-php"></i></div>
+                <div>
+                  <strong>PHP Backend</strong>
+                  <span>Server-side scripting & data</span>
+                </div>
+              </div>
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon py-color"><i class="fa-brands fa-python"></i></div>
+                <div>
+                  <strong>Python</strong>
+                  <span>Logika, otomatisasi & eksperimen</span>
+                </div>
+              </div>
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon design-color"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div>
+                  <strong>UI / UX Design</strong>
+                  <span>Desain estetis & tata letak visual</span>
+                </div>
+              </div>
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon git-color"><i class="fa-brands fa-git-alt"></i></div>
+                <div>
+                  <strong>Git & GitHub</strong>
+                  <span>Version control & kolaborasi</span>
+                </div>
+              </div>
+              <div class="skill-pill-card">
+                <div class="skill-pill-icon responsive-color"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div>
+                  <strong>Responsive Design</strong>
+                  <span>Tampilan sempurna di HP & PC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KONTEN: PORTOFOLIO PROYEK -->
+          <div id="content-proyek" class="drawer-section-view hidden">
+            <div class="section-intro-text">
+              <h3>Karya & Eksplorasi Portofolio</h3>
+              <p>Berikut beberapa karya terkemuka yang telah dirancang dan dikembangkan:</p>
+            </div>
+
+            <div class="projects-list-drawer">
+              <!-- Proyek 1 -->
+              <article class="drawer-project-item">
+                <div class="drawer-proj-img">
+                  <img src="assets/mockup-reference.jpg" alt="Landing Screen Portofolio">
+                  <span class="badge-tag-mini">FEATURED</span>
+                </div>
+                <div class="drawer-proj-info">
+                  <div class="proj-tech-tags">
+                    <span>HTML5</span><span>CSS3 Motion</span><span>JavaScript</span>
+                  </div>
+                  <h4>Interactive Landing Screen & 3D Wheel</h4>
+                  <p>Portofolio personal dengan layar pembuka interaktif tombol Next dan silinder menu 3D putar berestetika modern.</p>
+                </div>
+              </article>
+
+              <!-- Proyek 2 -->
+              <article class="drawer-project-item">
+                <div class="drawer-proj-placeholder">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="drawer-proj-info">
+                  <div class="proj-tech-tags">
+                    <span>Web App</span><span>Interactive</span>
+                  </div>
+                  <h4>Proyek Inovasi Digital Berikutnya</h4>
+                  <p>Ruang untuk karya atau proyek baru Labib. Judul, gambar, dan tautan dapat kamu tambahkan di sini kapan saja.</p>
+                </div>
+              </article>
+
+              <!-- Proyek 3 -->
+              <article class="drawer-project-item">
+                <div class="drawer-proj-placeholder">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="drawer-proj-info">
+                  <div class="proj-tech-tags">
+                    <span>UI / UX</span><span>Motion UI</span>
+                  </div>
+                  <h4>Konsep Antarmuka Visual Kreatif</h4>
+                  <p>Studi eksplorasi tata letak visual, kombinasi tipografi dinamis, serta navigasi interaktif kelas dunia.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- KONTEN: CREATIVE MOTION LAB -->
+          <div id="content-motion-lab" class="drawer-section-view hidden">
+            <div class="section-intro-text">
+              <h3>Creative Motion Lab</h3>
+              <p>Eksperimen interaktif motion dan UI yang dibangun dengan prinsip hardware design:</p>
+            </div>
+
+            <div class="lab-experiments-grid">
+              <div class="lab-card">
+                <span class="lab-card-tag">PHYSICS</span>
+                <h4>3D Rotating Cylinder Wheel</h4>
+                <p>Silinder navigasi 3D miring dengan inersia lemparan momentum, rotasi halus, dan efek suara klik mekanik analog.</p>
+              </div>
+              <div class="lab-card">
+                <span class="lab-card-tag">AUDIO API</span>
+                <h4>Mechanical Detent Clicks</h4>
+                <p>Suara tik analog frekuensi segitiga yang disintesis langsung menggunakan Web Audio API tanpa perlu aset file eksternal.</p>
+              </div>
+              <div class="lab-card">
+                <span class="lab-card-tag">SHIMMER</span>
+                <h4>Gradient Light Sweep</h4>
+                <p>Pendaran cahaya gradasi yang bergerak melintasi nama dan tombol secara terus-menerus.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KONTEN: KONTAK SAYA -->
+          <div id="content-kontak" class="drawer-section-view hidden">
+            <div class="section-intro-text">
+              <h3>Mari Terhubung & Berkolaborasi</h3>
+              <p>Punya ide menarik atau proyek yang ingin didiskusikan? Kirimkan pesan sekarang:</p>
+            </div>
+
+            <div class="drawer-contact-layout">
+              <div class="drawer-contact-cards">
+                <div class="contact-pill-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <strong>Email</strong>
+                    <p>labibabdulfattah@example.com</p>
+                  </div>
+                </div>
+                <div class="contact-pill-item">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <div>
+                    <strong>WhatsApp</strong>
+                    <p>Siap untuk konsultasi & kerja sama</p>
+                  </div>
+                </div>
+                <div class="contact-pill-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <strong>Lokasi</strong>
+                    <p>Indonesia</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Form Kirim Pesan -->
+              <form class="drawer-contact-form" onsubmit="event.preventDefault(); alert('Terima kasih! Pesan kamu siap dikirim.');">
+                <div class="form-group-dark">
+                  <label>Nama Kamu</label>
+                  <input type="text" placeholder="Tuliskan nama kamu..." required>
+                </div>
+                <div class="form-group-dark">
+                  <label>Email</label>
+                  <input type="email" placeholder="nama@email.com" required>
+                </div>
+                <div class="form-group-dark">
+                  <label>Pesan</label>
+                  <textarea rows="3" placeholder="Tuliskan ide atau pesanmu..." required></textarea>
+                </div>
+                <button type="submit" class="btn-send-dark">
+                  <i class="fa-regular fa-paper-plane"></i> Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TURNTABLE VINYL MUSIC PLAYER WIDGET (CARTER OGUNSOLA)     -->
+    <!-- Menampilkan Kaset / Vinyl Heavenly Jumpstyle               -->
+    <!-- Default: Tertutup (is-minimized), hanya buka saat diklik  -->
+    <!-- ======================================================== -->
+    <div id="turntable-widget" class="turntable-deck-widget is-minimized" aria-label="Pemutar Musik Piringan Hitam">
+      <div class="turntable-deck-header">
+        <div class="deck-top-info">
+          <div class="deck-brand-pill">
+            <span class="deck-status-dot" id="music-deck-dot"></span>
+            <span class="deck-badge-brand">LABIB DECK • MK-II</span>
+          </div>
+          <div class="deck-header-actions">
+            <label for="music-file-input" class="deck-btn-file" title="Pilih lagu MP3 dari komputermu">
+              <i class="fa-solid fa-folder-open"></i> <span>Pilih MP3</span>
+            </label>
+            <input type="file" id="music-file-input" accept="audio/*" style="display: none;">
+            <button id="turntable-close-btn" class="deck-btn-close" title="Tutup / Sembunyikan Player (✕)">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="turntable-body-interactive">
+        <div class="turntable-platter-area">
+          <!-- Piringan Hitam (Vinyl Record) -->
+          <div class="vinyl-platter-wrapper">
+            <div class="vinyl-record" id="vinyl-disc">
+              <div class="vinyl-groove-rings"></div>
+              <!-- Center Label dengan Gambar Kaset / Anime Heavenly Jumpstyle -->
+              <div class="vinyl-center-label">
+                <img src="assets/music-album-art.jpg" alt="Heavenly Jumpstyle" class="vinyl-art-img" id="vinyl-cover-img">
+                <div class="vinyl-spindle-hole"></div>
+              </div>
+              <!-- Pantulan Kilap Piringan Hitam -->
+              <div class="vinyl-light-sheen"></div>
+            </div>
+          </div>
+
+          <!-- Jarum / Tonearm Pemutar Piringan Hitam -->
+          <div class="turntable-tonearm" id="turntable-arm">
+            <div class="tonearm-base">
+              <div class="tonearm-pivot"></div>
+            </div>
+            <div class="tonearm-rod">
+              <div class="tonearm-headshell">
+                <div class="tonearm-stylus"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speed 33/45 RPM Indicator -->
+          <div class="turntable-speed-controls">
+            <button type="button" class="speed-btn active" id="btn-speed-33">33 RPM</button>
+            <button type="button" class="speed-btn" id="btn-speed-45">45 RPM</button>
+          </div>
+        </div>
+
+        <!-- Layar Metadata & Kontrol Musik (Persis Mockup Gambar) -->
+        <div class="turntable-meta-screen">
+          <div class="meta-row-status">
+            <div class="radio-status">
+              <span class="radio-led" id="music-led"></span>
+              <span id="music-radio-status">RADIO :: OFF-AIR</span>
+            </div>
+            <div class="meta-rotation">
+              ROTATION :: <strong class="text-glow" id="music-rotation-label">DRAKE × 14</strong>
+            </div>
+          </div>
+
+          <div class="meta-row-song">
+            <div class="song-info">
+              <h4 class="song-title" id="music-song-title">Heavenly Jumpstyle</h4>
+              <span class="song-artist" id="music-song-artist">Zirect Label • Phonk / Jumpstyle</span>
+            </div>
+            <div class="meta-badge-genre">
+              <span id="music-genre-tag">PHONK</span>
+            </div>
+          </div>
+
+          <!-- Playlist Selector Pills (Pilihan Lagu) -->
+          <div class="turntable-playlist-strip" id="turntable-playlist-strip">
+            <button type="button" class="track-pill active" data-track="0">1. Heavenly Jumpstyle</button>
+            <button type="button" class="track-pill" data-track="1">2. Brazilian Hardstyle</button>
+            <button type="button" class="track-pill" data-track="2">3. Night City Drift</button>
+            <button type="button" class="track-pill" data-track="3">4. Carter Lab Lo-Fi</button>
+          </div>
+
+          <!-- Progress Bar & Time -->
+          <div class="turntable-progress-wrap">
+            <div class="progress-track" id="turntable-progress-track">
+              <div class="progress-fill" id="turntable-progress-fill"></div>
+            </div>
+            <div class="progress-times">
+              <span id="music-time-curr">00:00</span>
+              <span id="music-time-total">04:15</span>
+            </div>
+          </div>
+
+          <!-- Action Bar: Prev, Play/Pause, Next, Visualizer, Volume -->
+          <div class="turntable-controls-bar">
+            <div class="deck-play-group">
+              <button id="btn-music-prev" class="btn-deck-skip" title="Lagu Sebelumnya">
+                <i class="fa-solid fa-backward-step"></i>
+              </button>
+              <button id="btn-music-play" class="btn-deck-play" title="Mainkan / Jeda Musik">
+                <i class="fa-solid fa-play" id="music-play-icon"></i>
+              </button>
+              <button id="btn-music-next" class="btn-deck-skip" title="Lagu Selanjutnya">
+                <i class="fa-solid fa-forward-step"></i>
+              </button>
+            </div>
+
+            <!-- Live Visualizer Equalizer Bars -->
+            <div class="turntable-visualizer" id="turntable-visualizer">
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+              <span class="v-bar"></span>
+            </div>
+
+            <!-- Volume Slider -->
+            <div class="deck-volume-wrap" title="Pengatur Volume">
+              <i class="fa-solid fa-volume-high text-muted" id="volume-icon"></i>
+              <input type="range" id="deck-volume" min="0" max="100" value="80" class="deck-volume-slider">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden Audio Player for Real MP3 Playback -->
+      <audio id="real-audio-player" preload="auto"></audio>
+    </div>
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- MODAL PENGATURAN (SETTINGS MODAL)                        -->
+  <!-- Tempat Pengaturan Tema Mode Malam, Efek Audio, & Wilayah -->
+  <!-- ======================================================== -->
+  <div id="portfolio-settings-modal" class="settings-modal" aria-hidden="true">
+    <div class="settings-modal-backdrop" id="settings-modal-backdrop"></div>
+    <div class="settings-modal-card" role="dialog" aria-modal="true" aria-labelledby="settings-modal-title">
+      
+      <!-- Modal Header -->
+      <div class="settings-modal-header">
+        <div class="settings-title-wrap">
+          <div class="settings-icon-badge">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div>
+            <h3 id="settings-modal-title" class="settings-title">Pengaturan</h3>
+            <p class="settings-subtitle">Personalisasi tema, suara, dan waktu sistem</p>
+          </div>
+        </div>
+        <button type="button" class="btn-settings-close" id="btn-settings-close" title="Tutup Pengaturan">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="settings-modal-body">
+        
+        <!-- Pengaturan 1: Tema Mode Siang / Malam / Otomatis -->
+        <div class="settings-item-group">
+          <div class="settings-item-label">
+            <div class="label-heading">
+              <i class="fa-solid fa-circle-half-stroke text-accent"></i>
+              <strong>Tema Tampilan</strong>
+            </div>
+            <span class="label-desc">Pilih suasana siang cerah, malam berbintang, atau biarkan berganti otomatis sesuai jam daerah Anda</span>
+          </div>
+
+          <div class="settings-theme-selector" role="group" aria-label="Pilih Mode Tema">
+            <button type="button" class="theme-option-btn mode-btn active" data-mode="day" title="Mode Siang">
+              <div class="theme-icon-wrap"><i class="fa-solid fa-sun"></i></div>
+              <div class="theme-text">
+                <span class="theme-name">Siang</span>
+                <span class="theme-sub">Pantai Cerah</span>
+              </div>
+            </button>
+
+            <button type="button" class="theme-option-btn mode-btn" data-mode="night" title="Mode Malam">
+              <div class="theme-icon-wrap"><i class="fa-solid fa-moon"></i></div>
+              <div class="theme-text">
+                <span class="theme-name">Malam</span>
+                <span class="theme-sub">Bulan & Bintang</span>
+              </div>
+            </button>
+
+            <button type="button" class="theme-option-btn mode-btn" data-mode="auto" title="Mode Otomatis Sesuai Waktu Lokal">
+              <div class="theme-icon-wrap"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <div class="theme-text">
+                <span class="theme-name">Otomatis</span>
+                <span class="theme-sub">Waktu Daerah</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pengaturan 2: Efek Suara Analog -->
+        <div class="settings-item-group">
+          <div class="settings-item-label">
+            <div class="label-heading">
+              <i class="fa-solid fa-volume-high text-cyan"></i>
+              <strong>Efek Suara Analog</strong>
+            </div>
+            <span class="label-desc">Suara klik mekanikal saat scroll silinder menu dan navigasi</span>
+          </div>
+
+          <button type="button" class="settings-toggle-switch is-active" id="btn-settings-sound-toggle" aria-pressed="true">
+            <span class="switch-status" id="settings-sound-label">Audio: AKTIF</span>
+            <span class="switch-indicator"></span>
+          </button>
+        </div>
+
+        <!-- Pengaturan 3: Informasi Wilayah & Waktu Real-Time -->
+        <div class="settings-info-box">
+          <div class="info-row">
+            <span class="info-label"><i class="fa-solid fa-earth-asia"></i> Wilayah & Zona:</span>
+            <span class="info-val" id="settings-detected-region">Indonesia • WIB (Asia/Jakarta)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label"><i class="fa-regular fa-clock"></i> Jam Real-Time:</span>
+            <span class="info-val clock-time" id="settings-clock-preview">12:55:00</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="settings-modal-footer">
+        <button type="button" class="btn-settings-done" id="btn-settings-done">
+          <i class="fa-solid fa-check"></i> Selesai
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js?v=20261125_07"></script>
+</body>
+</html>
